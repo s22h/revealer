@@ -1,0 +1,19 @@
+{
+  "name": "revealer",
+  "version": "1.0.0",
+  "description": "Reveals elements on a website when they intersect the viewport",
+  "main": "src/index.js",
+  "repository": "https://github.com/s22h/revealer",
+  "author": "Steffen Franzkoch (frako) <frako@frako.dev>",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "rollup": "^2.21.0",
+    "rollup-plugin-terser": "^6.1.0",
+    "rollup-plugin-typescript": "^1.0.1",
+    "tslib": "^2.0.0",
+    "typescript": "^3.9.6"
+  },
+  "scripts": {
+    "build": "rollup -c rollup.config.js"
+  }
+}
