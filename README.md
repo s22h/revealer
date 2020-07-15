@@ -23,14 +23,14 @@ import Revealer from "./revealer.min.js";
 
 const revealer = new Revealer();
 revealer.run(document.querySelectorAll(".reveal"), (entries, observer) => {
-		entries.forEach(e => {
-			if (e.isIntersecting && e.intersectionRatio >= 0.25) {
-				e.target.style.transition = "opacity 2s ease";
-				e.target.style.opacity = "1";
-			} else if (!e.isIntersecting) {
-				e.target.style.transition = "opacity 0.5s ease";
-				e.target.style.opacity = "0";
-			}
-		});
+	entries.forEach(e => {
+		if (e.isIntersecting && e.intersectionRatio >= 0.25) {
+			e.target.style.transition = "opacity 2s ease";
+			e.target.style.opacity = "1";
+		} else if (!e.isIntersecting) {
+			e.target.style.transition = "opacity 0.5s ease";
+			e.target.style.opacity = "0";
+		}
 	});
+});
 ```
